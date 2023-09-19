@@ -1,7 +1,67 @@
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-size: 62.5%;
 }
-header {
+
+body{
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+h1{
+    font-weight: 800;
+    font-size: 3.6rem;
+}
+
+h2 {
+    font-weight:800;
+    font-size: 2.4rem;
+}
+
+h1, h2, p{
+    margin: 1.6rem 0;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+
+section {
+    padding: 100px 0;
+}
+
+/* Hero Section */
+header{
+    height:100vh;
+    background: linear-gradient(rgba(0,0,0,0.6)),rgba(0, 0, 0, 0.6),url("./images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+/* header {
   display: flex;
   justify-content: space-between;
   padding: 60px;
@@ -67,4 +127,4 @@ main header {
 
 .contact-me nav {
     
-}
+} */ 
