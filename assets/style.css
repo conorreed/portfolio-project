@@ -1,156 +1,182 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 62.5%;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
-body{
-    font-family: sans-serif;
-    background-color: lightgray;
+body {
+  font-family: sans-serif;
+  background-color: lightgray;
 }
 
-a{
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 1.6rem;
-    color: black;
+a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: black;
 }
-h1{
-    font-weight: 800;
-    font-size: 3.6rem;
+
+h1 {
+  font-weight: 800;
+  font-size: 3.6rem;
 }
 
 h2 {
-    font-weight:800;
-    font-size: 2.4rem;
+  font-weight: 800;
+  font-size: 2.4rem;
 }
 
-h1, h2, p{
-    margin: 1.6rem 0;
+h3 {
+  font-weight: 800;
+  font-size: 1.8rem
 }
 
-img{
-    width: 100%;
-    height: auto;
+h1,
+h2,
+p {
+  margin: 1.6rem 0;
 }
-.row{
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    align-items: center;
-    margin: auto;
+
+img {
+  width: 100%;
+  height: auto;
 }
+
 
 section {
-    padding: 100px 0;
+  padding: 100px 0;
 }
 
-/* Hero Section */
-header{
-    height:100px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: black;
+.main-header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+/*   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+  color: black;
 }
 
 .main-header h1 {
-    font-size: 3.2rem;
-    color: black;
-    margin: 0;
+  font-size: 3.2rem;
+  color: black;
+  margin: 0;
+  justify-content: left;
 }
 
 .main-header nav {
-    padding: 2%, 8%;
-    display: flex;
-    justify-content: space-between;
-    float: right;
-    text-align: right;
+  display: flex;
+  margin-left: auto;
 }
 
 nav ul {
-    list-style-type: none;
-
+  list-style-type: none;
 }
 
-nav ul li{
-    display: inline-block;
-    margin-left: 2.5rem;
+nav ul li {
+  display: inline-block;
+  margin-left: 2.5rem;
 }
 
-nav ul li a:hover{
-    color: green;
-    transition: .5s ease-in-out;
+nav ul li a:hover {
+  color: green;
+  transition: 0.5s ease-in-out;
 }
 
-.main-header{
-    width: 50%;
-    position: relative;
-    top: 16%;
-    left:8%
-}
-.sub-header{
-    display: flex;
-    width: fill;
-    position: relative;
-    color: black;
-    background-color: none;
-    background-image: url(./images/bg.jpg);
+.main-header {
+  width: 50%;
+  position: relative;
+  top: 16%;
+  left: 8%;
 }
 
-.about-me{
-    display: flex;
+.sub-header {
+  display: flex;
+  width: fill;
+  position: relative;
+  color: whitesmoke;
+  background-color: none;
+  background-image: url(./images/bg.jpg);
+}
+
+.sub-header h1 {
+  right: 0px;
+}
+
+.about-me {
+  display: flex;
 }
 .about-me img {
-width: 10%;
-height: auto;
-padding: 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  padding: 10px;
 }
 
-.about-me p{
-    font-size: large;
-    padding: 5%;
-    margin: 5%;
+.about-me p {
+  font-size: large;
+  padding: 5%;
+  margin: 5%;
 }
 
 /* work section */
 .work {
-    display: flex;
+  display: flex;
+  justify-content: center;
+  
 }
 
-.row1{
-    flex-basis: 100%;
-    padding: 1.6rem;
+.work .row1 {
+  flex
+  flex-basis: 100%;
+  padding: 1.6rem;
 }
 
-.row2, .row3{
-    flex-basis: 50%;
-    padding: 1.6rem;
+.row2,
+.row3 {
+
+  flex-basis: 50%;
+  padding: 1.6rem;
+  align-items: center;
 }
 
 
+.contact-me{
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
 
+.contact-me h2 {
+  color: black;
+  margin: 0;
+  justify-content: left;
+}
 
-@media only screen and (max-width:768px){
-    nav{
-        flex-direction: column;
-        flex-wrap: wrap;
-        position: relative;
-        top: 18px;
-        right: 32px;
-    }
-    nav ul li {
-        padding:2% 0;
-    }
-    nav ul li a{
-        color: black;
-        display: block;
-    }
-    .work{
-        flex-direction: column;
-        flex-wrap: wrap;
-        position: relative;
-    }
+.contact-me nav {
+  display: flex;
+  margin-left: center;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    top: 18px;
+    right: 32px;
+  }
+  nav ul li {
+    padding: 2% 0;
+  }
+  nav ul li a {
+    color: black;
+    display: block;
+  }
+  .work {
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+  }
 }

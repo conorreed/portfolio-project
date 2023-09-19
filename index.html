@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conor Reed Portfolio</title>
-    <link rel="stylesheet" href="./assets/style.css">
-</head>
-<!-- GIVEN I need to sample a potential employee's previous work
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <!-- GIVEN I need to sample a potential employee's previous work
 WHEN I load their portfolio
 THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
 WHEN I click one of the links in the navigation
@@ -19,80 +19,93 @@ WHEN I click on the images of the applications
 THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport -->
-<body>
-    <header class = main-header>
-        <h1>Conor Reed</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#work">Work</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact Me</a>
-                </li>
-                <li>
-                    <a href="#resume">Resume</a>
-                </li>
-            </ul>
-        </nav>
+  <body>
+    <header class="main-header">
+      <h1>Conor Reed</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#about-me">About Me</a>
+          </li>
+          <li>
+            <a href="#work">Work</a>
+          </li>
+          <li>
+            <a href="#contact-me">Contact Me</a>
+          </li>
+          <li>
+            <a href="#resume">Resume</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <section class = sub-header>
-        <h2>Professional Portfolio</h2>
+    <section class="sub-header">
+      <h2>Professional Portfolio</h2>
     </section>
-    <section class = about-me>
-        <img src="./assets/images/Avatar.png" alt="Placeholder Avatar Image" class = float-left />
-        <h2>About Me</h2>
-        <p>I've always had a passion for learning and an obsession with doing the best I can. In 2023 I graduated from Sam Houston State University while majoring in History and minoring in Technical Writing.
-            My degree is a reflection of my love of researching new things, as well as my ability to convey information with concision. I began participating in an SMU Full Stack web development bootcamp at the beginning of September 2023.
-            Since joining the bootcamp I began to learn about HTML, CSS, Git, and Javascript. These skills allowed me to create many web applications. Five of these web applications are showcased below along with ways to view them and get in contact with me.
-            Thank you for taking the time to look at my portfolio, I look forward to any future dealings we may have. 
-        </p>
+    <section class="about-me" id="about-me">
+      <img
+        src="./assets/images/Avatar.png"
+        alt="Placeholder Avatar Image"
+        class="float-left"
+      />
+      <h2>About Me</h2>
+      <p>
+        I've always had a passion for learning and an obsession with doing the
+        best I can. In 2023 I graduated from Sam Houston State University while
+        majoring in History and minoring in Technical Writing. My degree is a
+        reflection of my love of researching new things, as well as my ability
+        to convey information with concision. I began participating in an SMU
+        Full Stack web development bootcamp at the beginning of September 2023.
+        Since joining the bootcamp I began to learn about HTML, CSS, Git, and
+        Javascript. These skills allowed me to create many web applications.
+        Five of these web applications are showcased below along with ways to
+        view them and get in contact with me. Thank you for taking the time to
+        look at my portfolio, I look forward to any future dealings we may have.
+      </p>
     </section>
 
-    <main class = work>
-        <h2>Work</h2>
-        <!-- TODO: wrap sections in A tags so that there are clickable links from the images -->
-        <section class="row1">
-            <h2>Horiseon Code Refactor</h2>
-            <img src="./assets/images/HoriseonImage.png" alt="Horiseon Code Refactor Image" />
-          </section>
-          <section class="row2">
-            <h2>Placeholder Project</h2>
-            <img src="./assets/images/Placeholder.jpg" alt="Placeholder Image" />
-          </section>
-          <section class="row2">
-            <h2>Placeholder Project</h2>
-            <img src="./assets/images/Placeholder.jpg" alt="Placeholder Image" />
-          </section>
-          <section class="row3">
-            <h2>Placeholder Project</h2>
-            <img src="./assets/images/Placeholder.jpg" alt="Placeholder Image" />
-          </section>
-          <section class="row3">
-            <h2>Placeholder Project</h2>
-            <img src="./assets/images/Placeholder.jpg" alt="Placeholder Image" />
-          </section>
+    <main class="work" id="work">
+      <h2>Work</h2>
+      <section class="row1">
+        <a href="https://github.com/conorreed/Horiseon-code-refactoring"> <h3>Horiseon Code Refactoring</h3></a>
+        <img
+          src="./assets/images/HoriseonImage.png"
+          alt="Horiseon Code Refactor Image"
+        />
+      </section>
+      <section class="row2">
+        <a href="https://github.com/conorreed"> <h3>Placeholder Project</h3></a>
+        <img src="./assets/images/Placeholder.jpg" alt="Placeholder Image" />
+      </section>
+      <section class="row2">
+        <a href="https://github.com/conorreed"> <h3>Placeholder Project</h3></a>
+        <img src="./assets/images/Placeholder.jpg" alt="Placeholder Image" />
+      </section>
+      <section class="row3">
+        <a href="https://github.com/conorreed"> <h3>Placeholder Project</h3></a>
+        <img src="./assets/images/Placeholder.jpg" alt="Placeholder Image" />
+      </section>
+      <section class="row3">
+        <h3><a href="https://github.com/conorreed"><h3>Placeholder Project</h3></a>
+        <img src="./assets/images/Placeholder.jpg" alt="Placeholder Image" />
+      </section>
     </main>
-    
-    <section class = contact-me>
-        <h2>Contact Me</h2>
-        <nav>
-            <ul>
-                <li>
-                    <a href="555-555-5555">555-555-5555</a>
-                </li>
-                <li>
-                    <a href= "mailto:conorreed@gmail.com">Email</a>
-                </li>
-                <li>
-                    <a href="https://github.com/conorreed">Github</a>
-                </li>
-            </ul>
-        </nav>
-
+<a href="https://github.com/conorreed"></a>
+    <section class="contact-me" id="contact-me">
+      <h2>Contact Me</h2>
+      <nav>
+        <ul>
+          <li>
+            <a href="555-555-5555">555-555-5555</a>
+          </li>
+          <li>
+            <a href="mailto:conorreed@gmail.com">Email</a>
+          </li>
+          <li>
+            <a href="https://github.com/conorreed">Github</a>
+          </li>
+        </ul>
+      </nav>
     </section>
-</body>
+  </body>
 </html>
